@@ -17,11 +17,12 @@ const Search = () => {
             <div className="container">
                 {
                     servicelist.filter((val) => {
-                        if (searchTerm == ""){
-                            return null
-                        }
-                        else if(val.service.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
-                            return val
+                        if (searchTerm === ""){
+                            return null;
+                        } else if(val.service.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                            return val;
+                        } else {
+                            return val;
                         }
                     }).map((val, key) => {
                         return(

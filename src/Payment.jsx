@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Payment = () => {
 
-    const {cartTotal, emptyCart} = useCart();
+    const {cartTotal} = useCart();
 
     return ( 
         <div className="container-fluid">
