@@ -15,14 +15,14 @@ const Services = () => {
                         <td><b>Pet Breeds</b>
 
                         </td>
-                        <td> <strong>Seervice DEscription</strong> </td>
+                        <td> <strong>Service Description</strong> </td>
                         <td> <strong>Price</strong></td>
                     </tr>
                     
                     {
                             servicelist.map((item, index) => {
                                 return (
-                                    <Serviceview service={item.service} price={item.price} key={index}/>
+                                    <Serviceview title={item.title} service={item.service} price={item.price} key={index}/>
 
                                 )
                             })

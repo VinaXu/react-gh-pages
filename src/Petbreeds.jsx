@@ -25,8 +25,8 @@ const PetBreeds = () => {
                 <h1 className="pet-title">Pet Breeds</h1>
                 <h5 className="text-center p-3 alert-success">Please select the item you want to buy by clicking on it.</h5>
                 <div className="container">
-                <div className="row row-cols-auto">
-                    <div className="col">
+                <div class="row row-cols-auto">
+                    <div class="col">
                         <h4>dogs</h4>
                         <div className="pet-items">                            
                              <ul>
@@ -41,7 +41,7 @@ const PetBreeds = () => {
                        </div>
                     </div>
                     {/* cat */}
-                    <div className="col">
+                    <div class="col">
                         <h4>Cats</h4>
                         <div className="pet-items">                            
                              <ul>
@@ -56,7 +56,7 @@ const PetBreeds = () => {
                        </div>
                     </div>
                     {/* Fish */}
-                    <div className="col">
+                    <div class="col">
                         <h4>Fish</h4>
                         <div className="pet-items">                            
                              <ul>
@@ -71,7 +71,7 @@ const PetBreeds = () => {
                        </div>
                     </div>
                     {/* bird */}
-                    <div className="col">
+                    <div class="col">
                         <h4>Bird</h4>
                         <div className="pet-items">                            
                              <ul>
@@ -86,7 +86,7 @@ const PetBreeds = () => {
                        </div>
                     </div>
                     {/* hamster */}
-                    <div className="col">
+                    <div class="col">
                         <h4>Hamtser</h4>
                         <div className="pet-items">                            
                              <ul>
@@ -101,7 +101,7 @@ const PetBreeds = () => {
                        </div>
                     </div>
                     {/* snake */}
-                    <div className="col">
+                    <div class="col">
                         <h4>Snake</h4>
                         <div className="pet-items">                            
                              <ul>
@@ -116,7 +116,7 @@ const PetBreeds = () => {
                        </div>
                     </div>
                     {/* turtle */}
-                    <div className="col">
+                    <div class="col">
                         <h4>Turlte</h4>
                         <div className="pet-items">                            
                              <ul>

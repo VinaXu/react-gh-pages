@@ -1,49 +1,47 @@
 const servicelist = [
     {
         id: 1,
-        service: "service 1",
+        title: "fish breeds",
+        service: "all inclusive",
         price: 45
     },
     {
         id:2,
-        service: "service 2",
+        title: "bird breeds",
+        service: "basic catering",
         price: 20
     },
     {
         id:3,
-        service: "service 3",
+        title:"cat breeds",
+        service: "nail and bath",
         price:45
     },
     {
         id:5,
-        service: "service 5",
+        title:"dog breeds",
+        service: "hair triming and bath",
         price: 65
     },
     {
         id:6,
-        service: "service 6",
+        title: "hamster breeds",
+        service: "basic catering",
         price: 30
     },
     {
         id:7,
-        service: "service 7",
+        title:"snake breeds",
+        service: "cages and matting material",
         price: 50
     },
     {
         id:8,
-        service: "service 8",
+        title: "turtle breeds",
+        service: "bath and care",
         price: 80
     },
-    {
-        id:9,
-        service: "service 9",
-        price: 25
-    },
-    {
-        id:10,
-        service: "service 10",
-        price: 55
-    },
+    
 ]
 
 

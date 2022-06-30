@@ -9,8 +9,8 @@ const StaffIntroudction = () => {
             <div className="container staff">
                 <h1 className="title">Staff introduction</h1>
 
-                <div className="row row-cols-auto">
-                    <div className="col">
+                <div class="row row-cols-auto">
+                    <div class="col">
                         {/* detail start  */}
                         <div className="staff-details">
                             <img src="https://source.unsplash.com/ybZ5hRxaWS4" alt="staff&pet" />

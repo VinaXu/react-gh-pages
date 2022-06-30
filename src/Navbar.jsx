@@ -17,7 +17,7 @@ const Navbar = () => {
                 {/* <li><Link to="/react-gh-pages/brands">Brands</Link></li> */}
                 <li><Link to="/react-gh-pages/notifications">Notifications</Link></li>
                 <li><Link to="/react-gh-pages/comments">Comments</Link></li>
-                <li><Link to="/react-gh-pages/cart" ><i className="fa-solid fa-cart-shopping"></i> {totalItems} </Link></li>
+                <li><Link to="/react-gh-pages/cart" ><i class="fa-solid fa-cart-shopping"></i> {totalItems} </Link></li>
 
             </ul>
         </div>

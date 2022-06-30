@@ -6,7 +6,7 @@ const Checkout = () => {
     const {cartTotal, emptyCart} = useCart();
     return ( 
         <div className="container-fluid">
-            <Navbar/>
+            {/* <Navbar/> */}
             <div className="container">
                 <div className="checkout">
                     

@@ -9,26 +9,27 @@ const Search = () => {
     return (
         <div>
             <div className="search">
-                <input onChange={event => {setSearchTerm(event.target.value)} } placeholder="Search for services..." type="text" />
+                <input onChange={event => {setSearchTerm(event.target.value)} } placeholder="Search services by breed..." type="text" />
                 <button>
-                    <i className="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
             <div className="container">
                 {
                     servicelist.filter((val) => {
-                        if (searchTerm === ""){
-                            return null;
-                        } else if(val.service.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
-                            return val;
-                        } else {
-                            return val;
+                        if (searchTerm == ""){
+                            return null
                         }
+                        else if(val.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                            return val
+                        }
+                        
                     }).map((val, key) => {
                         return(
-                            <div key={key}>
+                            <div className="services m-3" key={key}>
                                 <table>
                                     <tr>
+                                        <td> {val.title} </td>
                                         <td>{val.service} </td>
                                         <td> <strong>$ {val.price} </strong></td>
                                     </tr>

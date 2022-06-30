@@ -59,6 +59,8 @@ const Cart = () => {
                         <div className="col-auto">
                             <button onClick={()=> {emptyCart()}} className="btn btn-danger m-2">Empty</button>
                             <button className="btn btn-primary m2 "> <Link className="text-light" to="/react-gh-pages/payments">Check Out</Link></button>
+                            
+                                 
                         </div>
 
                 </div>

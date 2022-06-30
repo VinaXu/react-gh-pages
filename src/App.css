@@ -296,10 +296,6 @@ a{
     text-align: center;
     margin: 3vmin;
 }
-.services table{
-    align-items: center;
-    text-align: center;
-}
 .services table tr td{
     width: 300px;
     padding: 2vmin 0;
