@@ -4,11 +4,13 @@ import './App.css';
 import Navbar from './Navbar';
 import Search from "./Search";
 import PetGallery from "./PetGallery";
+import { CartProvider } from "react-use-cart";
 
 
 const HomePage = () => {
     return (
-        <div className="container-fluid">
+        <CartProvider>
+            <div className="container-fluid">
             <Navbar />
             <div className="container">
                 < Search />
@@ -17,6 +19,7 @@ const HomePage = () => {
 
             </div>
         </div>
+        </CartProvider>
     );
 }
 

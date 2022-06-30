@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useCart } from "react-use-cart";
 
-const Navbar = ({setShow, size}) => {
+const Navbar = () => {
+    const {totalItems} = useCart();
+
     return (
         <div className="nav-links">
             <img src="https://source.unsplash.com/pOUA8Xay514" alt="cute-pet" />
@@ -14,7 +17,7 @@ const Navbar = ({setShow, size}) => {
                 {/* <li><Link to="/react-gh-pages/brands">Brands</Link></li> */}
                 <li><Link to="/react-gh-pages/notifications">Notifications</Link></li>
                 <li><Link to="/react-gh-pages/comments">Comments</Link></li>
-                <li><Link to="/react-gh-pages/cart" ><i className="fa-solid fa-cart-shopping"></i>{size}</Link></li>
+                <li><Link to="/react-gh-pages/cart" ><i className="fa-solid fa-cart-shopping"></i> {totalItems} </Link></li>
 
             </ul>
         </div>

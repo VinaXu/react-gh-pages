@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 
 import Dogview from "./components/dogview";
 import Navbar from "./Navbar";
@@ -15,15 +14,16 @@ import birdlist from "./components/Bird";
 import Birdview from "./components/Birdview";
 import turtlelist from "./components/Turtle";
 import Turlteview from "./components/Turtleview";
-import Cart from "./Cart";
+
 
 const PetBreeds = () => {
     return (
         <div>
             <div className="container-fluid">
             <Navbar />
-            <Cart/>
+            {/* <Cart/> */}
                 <h1 className="pet-title">Pet Breeds</h1>
+                <h5 className="text-center p-3 alert-success">Please select the item you want to buy by clicking on it.</h5>
                 <div className="container">
                 <div className="row row-cols-auto">
                     <div className="col">

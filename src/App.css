@@ -326,3 +326,20 @@ a{
 .services{
     margin-bottom: 3vmin;
 }
+ul li:hover{
+    color: orange;
+}
+
+/* checkout */
+.checkout{
+    background: #fff;
+    margin: 6vmin;
+    padding: 6vmin;
+}
+.checkout h1, .checkout p{
+    background: transparent;
+}
+.checkout h1{
+    color: #1d0869;
+    font-weight: 600;
+}
