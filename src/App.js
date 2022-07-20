@@ -1,53 +1,43 @@
 import React from "react";
-import './App.css';
-
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-
-// pages
-import HomePage from "./Home";
-import StaffIntroudction from "./StaffIntroduction";
+import { BrowserRouter as Router, Route, Switch  } from "react-router-dom";
 import PageNotFound from "./404";
-import Services from "./Services";
-import PetBreeds from "./Petbreeds";
-import Notification from "./Notification";
-import Brands from "./Brands";
-import Comments from "./Comments";
-import Cart from "./Cart";  
-import Payment from "./Payment";
-import { CartProvider } from "react-use-cart";
-import Checkout from "./Checkout";
 
+import './App.css';
+import Cart from "./components/mainComponents/Cart";
+import Checkout from "./components/mainComponents/Checkout";
+import Comments from "./components/mainComponents/Comments";
+// import Footer from "./components/mainComponents/Footer";
+import Home from "./components/mainComponents/Home";
+import Notifications from "./components/mainComponents/Notifications";
+import Payments from "./components/mainComponents/Payments";
+import PetBreeds from "./components/mainComponents/PetBreeds";
+import Services from "./components/mainComponents/Services";
+import StaffIntroudction from "./components/mainComponents/StaffIntroudction";
 
 const App = () => {
     return (
-
-        <CartProvider>
-            <Router>
-                <div className="container-fluid">
-
-                    <Switch>
-                        <Route exact path="/react-gh-pages/" component ={HomePage} />
-                        <Route exact path="/react-gh-pages/staff" component ={StaffIntroudction} />
-                        <Route exact path="/react-gh-pages/services" component ={Services} />
-                        <Route exact path="/react-gh-pages/petbreeds" component ={PetBreeds} />
-                        <Route exact path="/react-gh-pages/notifications" component ={Notification} />
-                        <Route exact path="/react-gh-pages/brands" component ={Brands} />
-                        <Route exact path="/react-gh-pages/comments" component ={Comments} />
-                        <Route exact path="/react-gh-pages/cart" component ={Cart} />
-                        <Route exact path="/react-gh-pages/payments" component ={Payment} />
-                        <Route export path="/react-gh-pages/checkout" component ={Checkout}/>
-                        <Route component ={PageNotFound} />
-                    </Switch>
-
-                </div>
-
-            </Router>
-        </CartProvider>
-        
-    );
+        <>
+        <Router>
+            <div>
+                <Switch>
+                    <Route exact path="/react-gh-pages/" component={Home} />
+                    <Route exact path="/react-gh-pages/staff" component ={StaffIntroudction} />
+                    <Route exact path="/react-gh-pages/services" component ={Services} />
+                    <Route exact path="/react-gh-pages/petbreeds" component ={PetBreeds} />
+                    <Route exact path="/react-gh-pages/comments" component ={Comments} />
+                    <Route exact path="/react-gh-pages/notifications" component ={Notifications} />
+                    <Route exact path="/react-gh-pages/cart" component ={Cart} />
+                    <Route exact path="/react-gh-pages/payments" component={Payments} />
+                    <Route exact path="/react-gh-pages/checkout" component={Checkout} />
+                    <Route component={PageNotFound} />
+                </Switch>
+            </div>
+        </Router>
+        {/* <footer>
+        <Footer />
+        </footer> */}
+        </>
+    )
 }
 
 export default App;
-
-

@@ -1,0 +1,38 @@
+.comment{
+    display: flex;
+    width: 700px;
+    margin-left: 12%;
+}
+.comment img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5em;
+}
+.comment .card{
+    margin-top: 2em;
+    border: none;
+    padding: 1em;
+    background: rgba(236, 229, 229, 0.355);
+}
+.comment .card .card-title h5{
+    font-weight: 800;
+}
+.comment .card .card-title h6{
+   color: rgba(117, 111, 111, 0.889);
+}
+.comment .card p{
+    text-align: justify;
+}
+@media 
+only screen and (max-width: 800px),
+(min-device-width: 778px) and (max-device-width: 1024px){
+    .comment{
+        width: auto;
+        font-size: smaller;
+    }
+}
+.comment img{
+    width: 40px;
+    height: 40px;
+}

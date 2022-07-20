@@ -1,16 +1,16 @@
-import React from "react";
-
-import Navbar from "./Navbar";
-
 const PageNotFound = () => {
     return (
-        <div className="container-fluid">
-            <Navbar/>
-            <div className="container">
-                <h1>404 Page Not Found!</h1>
+        <div className="d-flex align-items-center justify-content-center vh-100">
+            <div className="text-center">
+                <h1 className="display-1 fw-bold">404</h1>
+                <p className="fs-3"> <span className="text-danger">Opps!</span> Page not found.</p>
+                <p className="lead">
+                    The page you are looking for does not exist.
+                  </p>
+                <a href="/react-gh-pages" className="btn btn-outline-primary">Go Home</a>
             </div>
         </div>
-    );
+    )
 }
 
 export default PageNotFound;

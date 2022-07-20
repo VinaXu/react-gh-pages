@@ -1,0 +1,46 @@
+
+.body{
+  width: 100%;
+  margin: 8vmin 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  max-width: 400px;
+  width: 100%;
+
+}
+.box .search-box{
+  position: relative;
+  height: 50px;
+  margin: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+.search-box input{
+  position: absolute;
+  background: rgba(236, 229, 229, 0.626);
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 1em;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  
+}
+
+.search-box .icon{
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 60px;
+  color: #FFF;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  background: #4c9e9e;
+  font-size: 20px;
+  border-radius: 0 25px 25px 0;
+}
