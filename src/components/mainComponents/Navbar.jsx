@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import { useCart } from "react-use-cart";
 import '../Styles/Navbar.css';
 import { useTranslation} from "react-i18next";
 
@@ -12,11 +11,10 @@ const Navbar = () => {
         localStorage.setItem("lng", lng);
     }
 
-    const {totalItems} = useCart();
     const location = useLocation();
 
     const { pathname } = location;
-    const splitPath = pathname.split("/");
+    const splitPath = pathname.split("/react-gh-pages/");
 
     return (
         <>
@@ -32,7 +30,7 @@ const Navbar = () => {
                         <li className={splitPath[1] === "petbreeds" ? "active" : "" }><Link to="/react-gh-pages/petbreeds">{t("Pet Breeds")}</Link></li>
                         <li className={splitPath[1] === "notifications" ? "active" : "" }><Link to="/react-gh-pages/notifications">{t("Notifications")}</Link></li>
                         <li className={splitPath[1] === "comments" ? "active" : "" }><Link to="/react-gh-pages/comments">{t("Comments")}</Link></li>
-                        <li className={splitPath[1] === "cart" ? "active" : "" }><Link to="/react-gh-pages/cart" ><i className="fa-solid fa-cart-shopping"></i> {totalItems} </Link></li>
+                        <li className={splitPath[1] === "cart" ? "active" : "" }><Link to="/react-gh-pages/cart" ><i className="fa-solid fa-cart-shopping"></i> 5 </Link></li>
                     </div>
                 </ul>
             </nav>
